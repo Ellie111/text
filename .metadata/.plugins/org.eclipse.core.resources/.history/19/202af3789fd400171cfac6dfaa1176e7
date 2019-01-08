@@ -1,0 +1,54 @@
+package com.ascent.bean;
+
+public class Product implements java.io.Serializable{
+
+private Integer id; 
+private String productnumber;//商品编号
+private String productname;//商品名字
+private String fullname;
+private String title;
+private String companyname;
+private String companyaddress;
+private String city;
+private String job;
+private String tel;
+private String email;
+private String country;
+private String zip;
+private String superuser;
+
+public Product(){
+}
+
+public Product(String username, String password, String fullname,String title, String companyname, String companyaddress,String city, String job, String tel, String email, String country,
+String zip, String superuser) {
+super();
+}
+
+public Integer getId() {
+	return id;
+}
+
+public void setId(Integer id) {
+	this.id = id;
+}
+
+public String getProductnumber() {
+	return productnumber;
+}
+
+public void setProductnumber(String productnumber) {
+	this.productnumber = productnumber;
+}
+
+public String getProductusername() {
+	return productname;
+}
+
+public void setProductusername(String productusername) {
+	this.productname = productusername;
+}
+
+
+
+}

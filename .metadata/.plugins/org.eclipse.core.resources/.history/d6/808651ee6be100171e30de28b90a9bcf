@@ -1,0 +1,26 @@
+package com.hbsi.dao;
+
+import java.util.List;
+
+import com.hbsi.domain.Book;
+import com.hbsi.domain.Cart;
+import com.hbsi.domain.CartItem;
+
+public class BusinessDAO {
+	BookDao dao=new BookDao();
+	public void deleteCartItem(String sid, Cart cart) {	
+		cart.getMap().remove(sid);
+	}
+	
+	public void clearCart(Cart cart) {
+		cart.getMap().clear();
+		
+	}
+
+	public void changeQuantity(String sid, String quantity, Cart cart) {
+		CartItem item=cart.getMap().get(sid);
+		item.setQuantity(Integer.parseInt(quantity));
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="csms"
+  id="myeclipse.1339741356030"
+  context-root="/csms"
+  j2ee-spec="5.0"
+  archive="csms.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

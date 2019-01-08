@@ -1,0 +1,8 @@
+127.0.0.1 - - [25/Oct/2017:09:02:50 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:02:54 +0800] "GET /text/userInfo.html HTTP/1.1" 200 189
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:02:57 +0800] "GET /text/LoginUserInfoServlet HTTP/1.1" 200 133
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:03:10 +0800] "GET /text/login.html HTTP/1.1" 200 332
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:03:22 +0800] "POST /text/LoginServlet HTTP/1.1" 200 235
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:03:32 +0800] "GET /text/LoginUserInfoServlet HTTP/1.1" 200 133
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:03:51 +0800] "POST /text/LoginServlet HTTP/1.1" 200 281
+0:0:0:0:0:0:0:1 - - [25/Oct/2017:09:03:56 +0800] "GET /text/LoginUserInfoServlet HTTP/1.1" 200 133

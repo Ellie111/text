@@ -1,0 +1,39 @@
+package com.hbsi.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.hbsi.dao.BusinessDAO;
+import com.hbsi.domain.Cart;
+
+@WebServlet("/ChangeQuantitySevlet")
+public class ChangeQuantitySevlet extends HttpServlet {
+       
+    public ChangeQuantitySevlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String sid = request.getParameter("id");
+		String quantity = request.getParameter("quantity");
+		
+		Cart cart = (Cart) request.getSession().getAttribute("cart");
+		BusinessDAO dao=new BusinessDAO();
+		dao.changeQuantity(sid,quantity,cart);
+		
+		request.getRequestDispatcher("/listcart.jsp").forward(request, response);
+
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		doGet(request, response);
+	}
+}

@@ -1,0 +1,3 @@
+127.0.0.1 - - [27/Nov/2017:12:46:35 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [27/Nov/2017:12:46:37 +0800] "GET /text/register.jsp HTTP/1.1" 200 4367
+0:0:0:0:0:0:0:1 - - [27/Nov/2017:12:50:23 +0800] "GET /text/registerHandler.jsp?id=5&username=qqq&fullname=%E8%8A%8A%E8%8A%8A&password=123&tel=12345678911&email=qq@qq.com&country=&city=&zip=&companyname=12&companyaddress=12&job=&title= HTTP/1.1" 200 543

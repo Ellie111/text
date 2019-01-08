@@ -1,0 +1,5 @@
+127.0.0.1 - - [27/Apr/2018:22:09:45 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Apr/2018:22:09:46 +0800] "GET /11/WEB-INF/classes/com/flight/front/menu/PersonalRegister.java HTTP/1.1" 404 992
+127.0.0.1 - - [27/Apr/2018:22:11:00 +0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [27/Apr/2018:22:11:01 +0800] "GET /11/WEB-INF/classes/com/flight/front/menu/IndexMenu.java HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [27/Apr/2018:22:16:08 +0800] "GET /11/WEB-INF/classes/com/flight/front/menu/IndexMenu.java HTTP/1.1" 404 992

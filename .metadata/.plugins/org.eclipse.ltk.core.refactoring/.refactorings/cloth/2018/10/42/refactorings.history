@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Emp.java&apos; to &apos;worehouse/src/models&apos;&#x0D;&#x0A;- Original project: &apos;cloth&apos;&#x0D;&#x0A;- Destination element: &apos;worehouse/src/models&apos;&#x0D;&#x0A;- Original element: &apos;com.hzyc.models.Emp.java&apos;" description="Copy compilation unit" destination="=worehouse/src&lt;models" element1="/src&lt;com.hzyc.models{Emp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1539782942392" units="1" version="1.0"/>
+</session>

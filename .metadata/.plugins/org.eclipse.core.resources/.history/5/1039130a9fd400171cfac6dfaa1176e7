@@ -1,0 +1,5 @@
+package com.ascent.bean;
+
+public class Product {
+
+}

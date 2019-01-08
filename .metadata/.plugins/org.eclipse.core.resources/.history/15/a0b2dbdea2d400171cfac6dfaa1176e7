@@ -1,0 +1,61 @@
+package com.ascent.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ascent.bean.Product;
+import com.ascent.util.DataAccess;
+
+public class ProductDAO {
+	public List<Product>getAllProductUser(){
+		  Connection con = DataAccess.getConnection();
+		  String sql = "select * from product p where delsoft='0' order by p.id";
+		  List<Product>list = new ArrayList<Product>();
+		  Statement stmt = null;
+		  ResultSet rs = null;
+		  try{
+		   stmt = con.createStatement();
+		   rs=stmt.executeQuery(sql);
+		   while(rs.next()){
+		    Usr pu = new Usr();
+		    pu.setId(rs.getInt("id"));
+		    pu.setUsername(rs.getString("username"));
+		    pu.setPassword(rs.getString("password"));
+		    pu.setFullname(rs.getString("fullname"));
+		    pu.setTitle(rs.getString("title"));
+		    pu.setCompanyname(rs.getString("companyname"));
+		    pu.setCompanyaddress(rs.getString("companyaddress"));
+		    pu.setCity(rs.getString("city"));
+		    pu.setJob(rs.getString("job"));
+		    pu.setTel(rs.getString("tel"));
+		    pu.setEmail(rs.getString("email"));
+		    pu.setCountry(rs.getString("country"));
+		    pu.setZip(rs.getString("zip"));
+		    pu.setSuperuser(rs.getString("superuser"));
+		    list.add(pu);
+		    
+		   }
+		  }catch(Exception e){
+		   e.printStackTrace();
+		  }finally{
+		   try{
+		    if(rs!=null){
+		     rs.close();
+		    }
+		    if(stmt!=null){
+		     stmt.close();
+		    }
+		    if(con!=null){
+		     con.close();
+		    }
+		   }catch(Exception e2){
+		    e2.printStackTrace();
+		   }
+		  }
+		  System.out.println("listuser:"+list);
+		  return list;
+		 }
+}
